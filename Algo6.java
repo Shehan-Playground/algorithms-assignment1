@@ -21,7 +21,7 @@ public class Algo6 {
         do {
             valid = true;
             System.out.println();
-            System.out.print("Enter a text: ");
+            System.out.print("Enter a sentence: ");
             inputText = scanner.nextLine().strip();
 
             textArray = inputText.toCharArray();
