@@ -16,9 +16,10 @@ public class Algo5 {
         
         String inputText;
         char[] text;
-        boolean valid = true;
+        boolean valid;
 
         do {
+            valid = true;
             System.out.println();
             System.out.print("Enter a text: ");
             inputText = scanner.nextLine().strip();
