@@ -31,7 +31,9 @@ public class Algo1 {
             
         } while (num1 < maxNum);
 
-        
+        System.out.print("\b\b");
+        System.out.println("  ");
+        System.out.println();
 
 
     }
