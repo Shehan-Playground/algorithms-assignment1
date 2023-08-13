@@ -12,6 +12,7 @@ public class Algo1 {
             maxNum = scanner.nextInt();
             scanner.nextLine();
 
+            // checking positive numbers
             if (maxNum <=0) System.out.println("Invalid. Enter only positive numbers");
 
         } while (maxNum <= 0);
@@ -23,6 +24,7 @@ public class Algo1 {
         
         do {
 
+            // Displaying fibonacchi numbers
             System.out.print(num1+", ");
 
             tempNum = num2;

@@ -26,11 +26,13 @@ public class Algo5 {
 
             text = inputText.toCharArray();
 
+            //Checking blank input
             if (inputText.isBlank()) {
                 System.out.println("Input cannot be blank or only spaces");
                 continue;
             }
 
+            // Checking ASCII characters
             for (int i = 0; i < text.length; i++) {
                 int j = 0;
                 for (j = 0; j < ascii.length; j++) {
@@ -45,6 +47,7 @@ public class Algo5 {
 
         } while (inputText.isBlank() || !valid);
 
+        // Display output
         System.out.println();
         for (int i = text.length-1; i >= 0; i--) {
             System.out.print(text[i]);

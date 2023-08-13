@@ -6,12 +6,14 @@ public class Algo2 {
         int smallNum = nums[0];
         int largeNum = nums[0];
 
+        // checking smallest and largest numbers
         for (int i = 0; i < nums.length; i++) {
             if (nums[i] < smallNum) smallNum = nums[i];
             else if (nums[i] > largeNum) largeNum = nums[i];
 
         }
 
+        // displaying output
         System.out.println("Smallest number: " + smallNum);
         System.out.println("Largest number: " + largeNum);
 

@@ -26,11 +26,13 @@ public class Algo6 {
 
             textArray = inputText.toCharArray();
 
+            //Checking blank input
             if (inputText.isBlank()) {
                 System.out.println("Input cannot be blank or only spaces");
                 continue;
             }
 
+            // Checking ASCII characters
             for (int i = 0; i < textArray.length; i++) {
                 int j = 0;
                 for (j = 0; j < ascii.length; j++) {
@@ -47,6 +49,7 @@ public class Algo6 {
 
         String[] wordsArray = inputText.split(" ",0);
 
+        // Display output
         System.out.println();
 
         for (int i = wordsArray.length-1; i >= 0; i--) {

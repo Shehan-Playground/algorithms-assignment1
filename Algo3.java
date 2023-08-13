@@ -13,6 +13,7 @@ public class Algo3 {
 
         System.out.println();
 
+        // Printing opposit sequence
         for (int i = 0; i < nums.length; i++) {
             System.out.print(nums[i]+", ");
         }

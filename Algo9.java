@@ -14,11 +14,13 @@ public class Algo9 {
             System.out.print("Enter a single word: ");
             inputText = scanner.nextLine().strip();
 
+            // checking blank inputs
             if (inputText.isBlank()) {
                 System.out.println("Input cannot be blank or only spaces");
                 continue;
             }
 
+            // checking single words
             if (inputText.contains(" ")) {
                 System.out.println("Input only a single word");
                 valid = false;
