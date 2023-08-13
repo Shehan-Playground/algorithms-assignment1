@@ -1,7 +1,7 @@
 public class Algo8 {
     public static void main(String[] args) {
         
-        int[] numA = {5,7,-2,3,4,6,7};
+        int[] numA = {5,7,-2,3,4,6,-8};
         int[] numB = {7,8,-8,2,1,-9,6};
 
         String intersection = "";
