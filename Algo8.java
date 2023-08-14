@@ -6,6 +6,8 @@ public class Algo8 {
 
         String intersection = "";
         String noIntersection = "";
+        String noIntersectionA = "";
+        String noIntersectionB = "";
 
         // Seperating values in numA as intersection with numB and not intersection with numB
         loopNumA:
@@ -22,7 +24,7 @@ public class Algo8 {
             }
 
             if (j < numB.length) intersection+=(numA[i]+" ");
-            else noIntersection+=(numA[i]+" ");
+            else noIntersectionA+=(numA[i]+" ");
         }
 
         String[] intersectionArray = intersection.split(" ");
@@ -42,13 +44,13 @@ public class Algo8 {
                 if ((numB[i]+"").equals(intersectionArray[j])) break;
             }
 
-            if (j == intersectionArray.length) noIntersection+=(numB[i]+" ");
+            if (j == intersectionArray.length) noIntersectionB+=(numB[i]+" ");
         }
+
+        noIntersection = noIntersectionA + noIntersectionB;
 
         // All the values without duplicates
         String total = intersection + noIntersection;
-
-        String[] totalArray = total.split(" ");
 
         // numA intersection numB
         System.out.println("\nnumA \u2229 numB: " + intersection);
@@ -56,13 +58,11 @@ public class Algo8 {
         // numA U numB
         System.out.println("\nnumA \u222A numB: " + total);
 
-        // P(numA | numB) 
-        double probabilityAGivenB = (intersectionArray.length*1.0/totalArray.length)/(numB.length*1.0/totalArray.length);
-        System.out.printf("\nP(numA | numB): %.2f", probabilityAGivenB);
+        // numA \ numB
+        System.out.println("\nnumA \\ numB: "+ noIntersectionA);
 
-        // P(numB | numA) 
-        double probabilityBGivenA = (intersectionArray.length*1.0/totalArray.length)/(numA.length*1.0/totalArray.length);
-        System.out.printf("\n\nP(numB | numA): %.2f", probabilityBGivenA);
+        // numB \ numA
+        System.out.println("\nnumB \\ numA: "+ noIntersectionB);
 
         // numA delta numB
         System.out.println("\n\nnumA \u25B3 numB: " + noIntersection);
